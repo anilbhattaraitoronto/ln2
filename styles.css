@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  --theme-color1: rgb(158, 2, 2);
+  --theme-color2: rgb(0, 0, 133);
+}
+
+body {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+.main-header {
+  background: var(--theme-color1);
+  padding: 40px;
+  margin: auto;
+}
+
+.masthead {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  text-shadow: 1px 0 black;
+}
+.masthead::before {
+  content: " a new language, a whole new world ";
+  color: rgb(224, 219, 219);
+  margin-bottom: 10px;
+  text-transform: lowercase;
+  display: block;
+  font-size: 0.32em;
+  font-style: italic;
+  word-spacing: 5px;
+  text-shadow: none;
+}
+#landing {
+  margin: 10px auto;
+}
+.landing-image {
+  position: relative;
+  width: 98%;
+  max-width: 900px;
+  margin: auto;
+}
+.landing-image img {
+  position: relative;
+  display: block;
+  max-width: 900px;
+  width: 95%;
+  margin: auto;
+  object-fit: cover;
+}
+.start-button {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  background: rgba(218, 209, 209, 0.3);
+  z-index: 20;
+}
+.start-button button {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  background: none;
+  border: none;
+  margin: auto;
+}
+.start-button button h3:hover {
+  color: goldenrod;
+}
+.start-button button h3 {
+  color: white;
+  margin: 2px 0;
+  text-align: center;
+  transition: 300ms ease-in-out;
+}
+
+#lessons {
+  position: relative;
+  width: 100%;
+  /* box-shadow: 0 0 9px 1px gray;; */
+  /* animation: start 2500ms linear; */
+}
+@keyframes start {
+  from {
+    top: -700px;
+    transform: scale(0);
+  }
+  to {
+    top: 0;
+    transform: scale(1);
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  list-style-type: none;
+  padding: 5px 7px;
+  box-shadow: 1px 0 0 gray;
+  border-top-right-radius: 5px;
+  border-right: 1px solid white;
+  cursor: pointer;
+  font-size: 0.9em;
+  /* letter-spacing: 1px; */
+}
+.level-nav {
+  background: var(--theme-color1);
+  color: white;
+}
+.level-nav .active-level {
+  color: goldenrod;
+}
+.level-nav .link:hover {
+  color: goldenrod;
+}
+.level {
+  background: rgb(236, 232, 232);
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 0;
+}
+.level-title {
+  background: white;
+  padding: 5px 0;
+}
+.level-title,
+.lesson-title {
+  text-align: center;
+}
+.lesson {
+  width: 360px;
+  height: 360px;
+  margin: 10px auto;
+  background: white;
+}
+.lesson-title {
+  padding: 3px 0;
+}
+.beginner-lesson {
+  position: relative;
+}
+
+.letter-box {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  margin: auto;
+  background: lightgray;
+}
+.prev-vowel,
+.next-vowel,
+.prev-root,
+.next-root,
+.prev-composite,
+.next-composite {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  padding: 5px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.next-vowel,
+.next-root,
+.next-composite {
+  right: 0;
+}
+.english {
+  position: absolute;
+  top: 0;
+}
+.image {
+  position: absolute;
+  bottom: 0;
+}
+.sound {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.nepali {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 0;
+  font-size: 4em;
+  background: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+footer {
+  background: var(--theme-color1);
+  text-align: center;
+  color: white;
+  padding: 5px 0;
+}

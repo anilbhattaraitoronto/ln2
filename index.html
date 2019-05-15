@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="nepali, nepali language, language learning, devnagari, devanagari, nepal, bhasa, south asian language"
+    />
+    <meta
+      name="description"
+      content="progressive web app to learn nepali language vowels, syllables, words, sentences. Learn Nepali Language"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Learn Nepali Version 2</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="masthead">Learn Nepali</h1>
+    </header>
+    <main class="wrapper">
+      <section id="landing" class="main-section">
+        <div class="landing-image">
+          <img
+            src="khumbu.jpg"
+            alt="Nepali Mountains"
+            title="Khumbu Himal of Nepal"
+          />
+          <div class="start-button">
+            <button id="start-button"><h3>Start Learning</h3></button>
+          </div>
+        </div>
+      </section>
+      <section id="lessons" class="main-section">
+        <nav class="level-nav navbar">
+          <li class="beginner-level-link level-link link">Beginner</li>
+          <li class="intermediate-level-link level-link link">Intermediate</li>
+          <li class="advanced-level-link level-link link">Advanced</li>
+          <li class="about-level-link level-link link">About</li>
+        </nav>
+        <main class="level" id="beginner-level">
+          <h3 class="level-title">Beginner (Letters)</h3>
+          <nav class="beginner-nav navbar">
+            <li class="vowel-link beginner-link link">Vowels</li>
+            <li class="root-link beginner-link link">Roots</li>
+            <li class="composite-link beginner-link link">Composites</li>
+          </nav>
+          <section class="vowel-lesson beginner-lesson lesson">
+            <h4 class="lesson-title">Vowels</h4>
+            <div class="letter-box vowel-box"></div>
+            <button class="prev-vowel">Prev</button>
+            <button class="next-vowel">Next</button>
+          </section>
+          <section class="root-lesson beginner-lesson lesson">
+            <h4 class="lesson-title">Roots</h4>
+            <div class="letter-box root-box">
+              <!-- <section class="nepali"></section>
+              <section class="english"></section>
+              <section class="sound"></section>
+              <section class="image"></section> -->
+            </div>
+            <button class="prev-root">Prev</button>
+            <button class="next-root">Next</button>
+          </section>
+          <section class="composite-lesson beginner-lesson lesson">
+            <h4 class="lesson-title">Composites</h4>
+            <div class="letter-box composite-box"></div>
+            <button class="prev-composite">Prev</button>
+            <button class="next-composite">Next</button>
+          </section>
+        </main>
+        <main class="level" id="intermediate-level">
+          <h3 class="level-title">Intermediate (Words)</h3>
+          <nav class="intermediate-nav navbar">
+            <li class="noun-link intermediate-link link">Nouns</li>
+            <li class="verb-link intermediate-link link">Verbs</li>
+            <li class="adjective-link intermediate-link link">Adjectives</li>
+            <li class="adverb-link intermediate-link link">Adverbs</li>
+          </nav>
+          <section class="noun-lesson intermediate-lesson lesson">
+            <h4 class="lesson-title">Nouns</h4>
+          </section>
+          <section class="verb-lesson intermediate-lesson lesson">
+            <h4 class="lesson-title">Verbs</h4>
+          </section>
+          <section class="adjective-lesson intermediate-lesson lesson">
+            <h4 class="lesson-title">Adjectives</h4>
+          </section>
+          <section class="adverb-lesson intermediate-lesson lesson">
+            <h4 class="lesson-title">Adverbs</h4>
+          </section>
+        </main>
+        <main class="level" id="advanced-level">
+          <h3 class="level-title">Advanced (Sentences)</h3>
+          <nav class="advanced-nav navbar">
+            <li class="present-link advanced-link link">Present</li>
+            <li class="past-link advanced-link link">Past</li>
+            <li class="future-link advanced-link link">Future</li>
+          </nav>
+          <section class="present-lesson advanced-lesson lesson">
+            <h4 class="lesson-title">Present</h4>
+          </section>
+          <section class="past-lesson advanced-lesson lesson">
+            <h4 class="lesson-title">Past</h4>
+          </section>
+          <section class="future-lesson advanced-lesson lesson">
+            <h4 class="lesson-title">Future</h4>
+          </section>
+        </main>
+        <main class="level" id="about-level">
+          <h3 class="level-title">About Nepali Language</h3>
+          <nav class="about-nav navbar">
+            <li class="letter-link about-link link">Letters</li>
+            <li class="word-link about-link link">Words</li>
+            <li class="sentence-link about-link link">Sentences</li>
+          </nav>
+          <section class="letter-lesson about-lesson lesson">
+            <h4 class="lesson-title">Letters</h4>
+          </section>
+          <section class="word-lesson about-lesson lesson">
+            <h4 class="lesson-title">Words</h4>
+          </section>
+          <section class="sentence-lesson about-lesson lesson">
+            <h4 class="lesson-title">Sentences</h4>
+          </section>
+        </main>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Anil Bhattarai, 2019</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
